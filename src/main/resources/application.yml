@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: cache
+  data:
+    redis:
+      host: 192.168.200.157
+      port: 6370
+      password: redis_Q54R5F
+      database: 0
+      ssl:
+        enabled: false
+    cache:
+      type: redis
+      redis:
+        time-to-live: 3600000
+        key-prefix: CACHE_
+        use-key-prefix: true
+        cache-null-values: true
