@@ -9,10 +9,10 @@ spring:
       database: 0
       ssl:
         enabled: false
-    cache:
-      type: redis
-      redis:
-        time-to-live: 3600000
-        key-prefix: CACHE_
-        use-key-prefix: true
-        cache-null-values: true
+  cache:
+    type: redis
+    redis:
+      time-to-live: 3600000
+      key-prefix: CACHE_
+      use-key-prefix: true
+      cache-null-values: true
